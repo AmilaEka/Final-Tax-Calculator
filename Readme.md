@@ -1,5 +1,5 @@
 # INDEX
--[PROJECT DESCRIPTION](#project-description)
+-[PROJECT DESCRIPTION](#project-description-)
 - [TEST APPROACH](#test-approach)
     - [TEST LEVELS](#test-levels)
         - [UNIT TESTING](#unit-testing)
@@ -36,7 +36,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ## Test Plans
 ### Sprint 1
 
-![Test plan Sprint 1](/Assests/Slide2.JPG)
+![Test plan Sprint 1](/Asserts/Slide2.JPG)
 #### Test Artifacts
 [UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
@@ -45,10 +45,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 # Agile Metrics
-![Burndownchart](/Assests/IH_Dynamic_Status_Update_2023-07-24_21_29.png)
-![Burndownchart](/Assests/IH_Dynamic_Status_Update_2023-07-24_21_30.png)
+![Burndownchart](/Asserts/IH_Dynamic_Status_Update_2023-07-24_21_29.png)
+![Burndownchart](/Asserts/IH_Dynamic_Status_Update_2023-07-24_21_30.png)
 
 # Defect Management
-![Defect Report](/Assests/Defect%20reporting.png)
+![Defect Report](/Asserts/Defect%20reporting.png)
 
 # Test Exit report
