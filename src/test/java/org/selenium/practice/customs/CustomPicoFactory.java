@@ -5,8 +5,8 @@ import io.cucumber.core.backend.ObjectFactory;
 import io.cucumber.picocontainer.PicoFactory;
 import org.selenium.practice.controller.SauceLabController;
 import org.selenium.practice.helpers.ReadConfigHelper;
-import org.selenium.practice.pages.LoginPageImpl;
 import org.selenium.practice.controller.ChromeController;
+import org.selenium.practice.pages.TaxCalculatePageImpl;
 
 
 public class CustomPicoFactory implements ObjectFactory
@@ -19,7 +19,7 @@ public class CustomPicoFactory implements ObjectFactory
     public CustomPicoFactory()
     {
         setDriver();
-        addClass(LoginPageImpl.class);
+        addClass(TaxCalculatePageImpl.class);
     }
 
 
