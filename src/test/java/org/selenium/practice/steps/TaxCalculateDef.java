@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class CalculateTaxFor$0Def {
+public class TaxCalculateDef {
     //WebDriverController driver;
     TaxCalculatorPage taxCalculatorPage;
 
@@ -20,7 +20,7 @@ public class CalculateTaxFor$0Def {
     WebDriver driver;
     TaxCalculatorPage taxCalPage;
 
-    public CalculateTaxFor$0Def(WebDriverController driver, TaxCalculatorPage taxCalPage) {
+    public TaxCalculateDef(WebDriverController driver, TaxCalculatorPage taxCalPage) {
 
         this.driver = driver.getDriver();
         this.taxCalPage = taxCalPage;
