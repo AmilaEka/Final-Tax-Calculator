@@ -1,54 +1,236 @@
 # INDEX
--[PROJECT DESCRIPTION](#project-description-)
+
+- [PROJECT DESCRIPTION](#project-description)
 - [TEST APPROACH](#test-approach)
     - [TEST LEVELS](#test-levels)
         - [UNIT TESTING](#unit-testing)
-
+        - [INTEGRATION TESTING](#integration-testing)
+        - [SYSTEM TESTING](#system-testing)
+- [TEST MANAGEMENT](#test-management)
 - [AGILE METRICS](#agile-metrics)
-## Project description  
+- [DEFECT MANAGEMENT](#defect-management)
 
-## Test approach
 
-## Test Levels
+
+# PROJECT DESCRIPTION
+
+Tax Calculator is a user-friendly and efficient web-based application designed to help individuals calculate their income tax liability accurately and easily. The platform aims to simplify the process of calculating taxes by providing a user-friendly interface that enables users to input their financial data and receive instant tax calculations based on the prevailing tax laws and regulations.
+
+> Tools used: <br />
+> JIRA | IntelliJ | Postman | Selenium | Cucumber | AxeDev |
+
+
+<div style="display: flex; justify-content: center;align-items: center; margin: 0;">
+    <img src="Asserts/atlassian_jira-ar21.png" alt="Image 2" style="height: 60px; margin: 0px;">
+    <img src="Asserts/IntelliJ_IDEA_Icon.svg.png" alt="Image 2" style="height: 60px; margin: 0px;">
+    <img src="Asserts/postman-inc-logo-vector.png" alt="Image 2" style="height: 60px; margin: 0px;">
+    <img src="Asserts/selenium.png" alt="Image 2" style="height: 60px; margin: 0px;">
+     <img src="Asserts/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 60px; margin: 0px;">
+     <img src="Asserts/jenkins8460.jpg" alt="Image 2" style="height: 60px; margin: 0px;">
+     <img src="Asserts/axe-rebrand.png" alt="Image 2" style="height: 60px; margin: 0px;">
+</div>
+
+
+
+# TEST APPROACH
+
+By adopting the **Attribute, Component, and Capability** (ACC) testing approach, we aim to ensure comprehensive testing of the Tax Calculator. This approach allows us to focus on critical attributes, components, and capabilities, ensuring that the Tax calculator is secure, compliant, auditable, accessible to all users, and responsive across various devices and browsers. The ACC approach will help us identify and address potential issues early in the development process, ultimately delivering a high-quality, user-friendly, and reliable Tax Calculator to our users.
+
+> Note: <br />
+> **Secure**, **Auditable** attribute are out of scope as MVP(Minimum viable product) did not require a login functionality to maintain security at this stage and also doest hold any records to consider an audit.
+
+- Compliance: Focus in testing any expected results or acceptance criteria.
+- Accessible: Focus in testing the application from the perspective of a person with different abilities
+- Responsive: Focus in testing the application in different browsers and screen dimensions
+
+## TEST LEVELS
+
 
 ### Unit testing
+
 [UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Unit testing  focuses on testing individual units or components of the software in isolation.
+The goal is to verify that each unit works as expected.Unit testing is highly valuable for detecting and fixing defects early in the development cycle.
+In the Tax Calculator there are for 4 unit been considered as MVP. Input field, button, Tax Summary report, Error Message.
+
+>Note:<br/>
+> In regards Compliance, Auditable, Accessible, Responsive focused while testing
+> - Input field: Placeholder the word 'Income' has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
+> - Button: Label 'Calculate Tax' has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
+> - Tax Summary report: 'Total tax', 'Tax Bracket' fields has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
+> - Error message: 'An error occurred while calculating tax.' required error message has been added.  In parallel Accessible, Responsive attributes been considered while conducting testing.
+
 
 ### Integration testing
 ### System testing
+
+[System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+
+System testing for the Tax Calculator involves evaluating the entire application as a whole to ensure that it functions correctly and meets all the specified requirements.
+Our main objective was to test the integrated system components and their interactions to verify that the Tax Calculator works seamlessly from end to end.
+Also, to validate the system's behavior and performance in a real-world environment, simulating user interactions and various scenarios.
+There are some aspect considered while conducting the Tax Calculator System testing.
+
+
+1. End-to-End Functionality:
+   System testing ensures that all components of the Tax Calculator, including the button, input field, summary report and error message function as expected when used together.
+   It tests the complete flow of the application, from entering income through the input field to displaying the accurate tax calculation result in the summary report.
+
+---
+
+2. Integration Verification:
+   System testing checks the integration of the individual components, ensuring they work smoothly as an integrated unit.
+   It validates that data is appropriately passed between components, and interactions between different parts of the system function smoothly.
+
+---
+
+3. Use Case Testing:
+   Different use cases are tested to cover various scenarios, such as different income levels.
+   System testing ensures that the Tax Calculator produces accurate results for a range of real-world tax scenarios.
+
+---
+4. Boundary and Stress Testing:
+   The application is subjected to boundary value testing to validate its behavior when input values are at the lower and upper limits.
+
+---
+5. User Interface Validation:
+   System testing verifies that the user interface is user-friendly, intuitive, and consistent.
+   It ensures that the button and input field are visually appealing,the summary report component displays the results in a clear and understandable format and,
+   error message component visually appealing as an informative message.
+
+---
+7. Compatibility Testing:
+   The Tax Calculator is tested on various browsers and devices to ensure compatibility across different platforms,
+   ensuring that users can access and use the application seamlessly.
+
+---
+8. Error Handling and Recovery:
+   System testing evaluates how the application responds unexpected inputs. It ensures that error messages are meaningful and provide guidance to users for resolving issues.
+
+---
+9. Performance Evaluation:
+   System testing assesses the overall performance of the Tax Calculator, including response times and resource utilization.
+   It ensures that the application performs efficiently even during peak usage.
+
+---
+10. Regression Testing:
+    Any changes or updates to the Tax Calculator are verified with regression testing to ensure that existing functionality remains unaffected.
+---
+11. Accessibility Testing:
+    Focusing on ensuring that the Tax Calculator is usable by individuals with different abilities. Main concern were Keyboard navigation and color contrast.
+
 ### Acceptance testing
 
+In the sprint review, the team conducted a demonstration of the Tax Calculator, treating it as an acceptance testing phase.
+During this review, the primary focus was to showcase the Tax Calculator's functionality and demonstrate that it meets the acceptance criteria
+and business requirements defined for the sprint.
+
+During the sprint review, the team presented the key features of the Tax Calculator, including the button for tax calculation, the input field to add income,
+and the summary report component displaying the calculated result.
+The team showcased various scenarios, such as different income levels to demonstrate the Tax Calculator's accuracy.
+
+Stakeholders actively participated in the review, providing valuable feedback on the Tax Calculator's functionality, user interface, and overall user experience.
+The  issues or concerns raised during the review were noted and prioritized for resolution in subsequent sprints or development cycles.
+
+
+
+
 ## Test Types
+
 ### Black Box
+
 #### Functional
+
+1.Boundary Value Analysis:
+
+Perform boundary value testing to check the application's behavior at the edge of input ranges.
+Test the Tax Calculator with inputs just below and above the lower and upper income boundaries to ensure it calculates taxes accurately.
+
+2.Equivalence Partitioning:
+
+Apply equivalence partitioning to divide the input space into equivalent classes and test representative inputs from each class.
+Test the Tax Calculator with multiple income values within each partition to validate consistent tax calculations.
+
 #### Non-functional
 
+---
 ### White Box
 
+1. Statement Coverage Testing:
 
-# Test Management
+Verify that each line of code in the Tax Calculator's implementation is executed at least once during testing.
+Ensure that all code statements are reachable and tested to detect any potential logic errors or dead code.
+
+
+
+2. Branch Coverage Testing:
+
+Test different branches and decision points in the code to ensure that all possible scenarios are evaluated.
+Check if conditional statements, loops, and logical operators are adequately tested to cover both true and false conditions.
+
+
+# TEST MANAGEMENT
 
 ## JIRA & Zephyr scale
 
-
 ## Test Plans
+
 ### Sprint 1
 
+- **Date -** May 22nd, 2023 - June 5th, 2023Date
+
+- **Sprint goal -** MVP: Calculate Income Tax
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+
 ![Test plan Sprint 1](/Asserts/Slide2.JPG)
+### Sprint 2
+
+- **Date -** June 5th, 2023 - June 19th, 2023
+
+- **Sprint goal -** do all the component testing, do all the API testing, manage time properly this time.
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+
+![Test plan Sprint 1](/Asserts/Slide3.JPG)
+
+### Sprint 3
+
+- **Date -** June 19th, 2023 - July 3rd, 2023
+- **Sprint goal** - Automate the UI testing using Selenium Finish testing on Tax Calculator
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+
+![Test plan Sprint 1](/Asserts/Slide4.JPG)
+
 #### Test Artifacts
-[UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
+Test suits
+: 
 
-[*Income Tax Calculation-UI*-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+- [API Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+- [System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
+Test analysis and design
+: 
 
-# Agile Metrics
+- [**Income Tax Calculation-UI**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [**Income Tax Calculation-API**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+- [**Income Tax Calculation-Integration**-Test analysis and design](https://docs.google.com/document/d/1RmNcYZimInADYbaS5WCcUtNw1NeDR47olZXLoImyVE8/edit)
+
+# AGILE METRICS
+
 ![Burndownchart](/Asserts/IH_Dynamic_Status_Update_2023-07-24_21_29.png)
 ![Burndownchart](/Asserts/IH_Dynamic_Status_Update_2023-07-24_21_30.png)
 
-# Defect Management
+# DEFECT MANAGEMENT
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
 ![Defect Report](/Asserts/Defect%20reporting.png)
 
-# Test Exit report
+# TEST EXIT REPORT
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
