@@ -16,28 +16,14 @@
 
 Tax Calculator is a user-friendly and efficient web-based application designed to help individuals calculate their income tax liability accurately and easily. The platform aims to simplify the process of calculating taxes by providing a user-friendly interface that enables users to input their financial data and receive instant tax calculations based on the prevailing tax laws and regulations.
 
-> Tools used: <br />
-> JIRA | IntelliJ | Postman | Selenium | Cucumber | AxeDev |
-
-
-<div style="display: flex; justify-content: center;align-items: center; margin: 0;">
-    <img src="Asserts/atlassian_jira-ar21.png" alt="Image 2" style="height: 60px; margin: 0px;">
-    <img src="Asserts/IntelliJ_IDEA_Icon.svg.png" alt="Image 2" style="height: 60px; margin: 0px;">
-    <img src="Asserts/postman-inc-logo-vector.png" alt="Image 2" style="height: 60px; margin: 0px;">
-    <img src="Asserts/selenium.png" alt="Image 2" style="height: 60px; margin: 0px;">
-     <img src="Asserts/0_6T0D8OjInvZhyHDE.png" alt="Image 2" style="height: 60px; margin: 0px;">
-     <img src="Asserts/jenkins8460.jpg" alt="Image 2" style="height: 60px; margin: 0px;">
-     <img src="Asserts/axe-rebrand.png" alt="Image 2" style="height: 60px; margin: 0px;">
-</div>
-
-
 
 # TEST APPROACH
 
-By adopting the **Attribute, Component, and Capability** (ACC) testing approach, we aim to ensure comprehensive testing of the Tax Calculator. This approach allows us to focus on critical attributes, components, and capabilities, ensuring that the Tax calculator is secure, compliant, auditable, accessible to all users, and responsive across various devices and browsers. The ACC approach will help us identify and address potential issues early in the development process, ultimately delivering a high-quality, user-friendly, and reliable Tax Calculator to our users.
+We intend to assure extensive testing of the Tax Calculator by using the **Attribute, Component, and Capability** (ACC) testing strategy. This method allows us to concentrate on important attributes, components, and capabilities, ensuring that the Tax Calculator is secure, compliant, auditable, accessible to all users, and responsive across several devices and browsers. The ACC technique will assist us in identifying and addressing any difficulties early in the development process, allowing us to provide our users with a high-quality, user-friendly, and dependable Tax Calculator.
 
 > Note: <br />
-> **Secure**, **Auditable** attribute are out of scope as MVP(Minimum viable product) did not require a login functionality to maintain security at this stage and also doest hold any records to consider an audit.
+> **Secure** and **Auditable** attributes are not included because the MVP (minimum viable product) at this level did not require a login feature to maintain security and does not have any records to contemplate an audit.
+
 
 - Compliance: Focus in testing any expected results or acceptance criteria.
 - Accessible: Focus in testing the application from the perspective of a person with different abilities
@@ -50,88 +36,91 @@ By adopting the **Attribute, Component, and Capability** (ACC) testing approach,
 
 [UI Component Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
-Unit testing  focuses on testing individual units or components of the software in isolation.
-The goal is to verify that each unit works as expected.Unit testing is highly valuable for detecting and fixing defects early in the development cycle.
-In the Tax Calculator there are for 4 unit been considered as MVP. Input field, button, Tax Summary report, Error Message.
+Individual software units or components are tested separately during unit testing. Verifying that each unit performs as intended is the aim.
+For identifying and repairing errors early in the development cycle, unit testing is quite beneficial. In the tax calculator, four units are regarded as MVP. 
+the Tax Summary report, a button, and an error message.
 
 >Note:<br/>
 > In regards Compliance, Auditable, Accessible, Responsive focused while testing
-> - Input field: Placeholder the word 'Income' has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
-> - Button: Label 'Calculate Tax' has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
-> - Tax Summary report: 'Total tax', 'Tax Bracket' fields has been added. In parallel Accessible, Responsive attributes been considered while conducting testing.
-> - Error message: 'An error occurred while calculating tax.' required error message has been added.  In parallel Accessible, Responsive attributes been considered while conducting testing.
+> - Input field: 'Income' has been placed as a placeholder. While doing testing, responsive and accessible qualities were taken into account.
+> - Button: Calculate Tax label has been added. When testing, responsive and accessible qualities were taken into consideration simultaneously.
+> - Tax Summary report: Fields for "Total tax" and "Tax Bracket" have been added. When testing, responsive and accessible qualities were taken into consideration simultaneously.
+> - Error message: 'An error occurred while calculating tax.' There is now a mandatory error message.  When testing, responsive and accessible qualities were taken into consideration simultaneously.
 
 
 ### Integration testing
+[Integration Test Suit ](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
+
+
+API testing on the tax calculator involves evaluating the functionality, performance, and security of the application programming interfaces. 
+It ensures accurate tax calculations, proper handling of input parameters, and reliable responses. 
+API testing validates data retrieval and integration, ensuring the tax calculator works seamlessly with other systems.
+>Note:<br/>
+The major goals of this sprint are to accurately calculate the tax when the test is running, find the correct tax bracket, and retrieve the correct tax bracket.
+
+
+
 ### System testing
+
 
 [System Test Suit](https://techdojob2.atlassian.net/projects/QTC?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10003)
 
-System testing for the Tax Calculator involves evaluating the entire application as a whole to ensure that it functions correctly and meets all the specified requirements.
-Our main objective was to test the integrated system components and their interactions to verify that the Tax Calculator works seamlessly from end to end.
-Also, to validate the system's behavior and performance in a real-world environment, simulating user interactions and various scenarios.
-There are some aspect considered while conducting the Tax Calculator System testing.
-
-
-1. End-to-End Functionality:
-   System testing ensures that all components of the Tax Calculator, including the button, input field, summary report and error message function as expected when used together.
-   It tests the complete flow of the application, from entering income through the input field to displaying the accurate tax calculation result in the summary report.
+When conducting system testing for the Tax Calculator that you built, several factors and aspects need to be considered to ensure its accuracy, reliability, and compliance with requirements. 
+Here are some key considerations for system testing of the Tax Calculator:
 
 ---
-
-2. Integration Verification:
-   System testing checks the integration of the individual components, ensuring they work smoothly as an integrated unit.
-   It validates that data is appropriately passed between components, and interactions between different parts of the system function smoothly.
+**Functional Testing**
+Verify that the Tax Calculator correctly calculates taxes based on the provided inputs, including income, deductions, credits, and tax rules.
+Test different scenarios and edge cases to ensure accurate results in various situations.
+Check if the Tax Calculator handles different tax types (e.g., income tax, sales tax) appropriately.
+---
+**Integration Testing:**
+Test the integration of different modules or components within the Tax Calculator to ensure seamless communication and data flow.
+Verify that all components work together as expected to provide accurate tax calculations.
 
 ---
-
-3. Use Case Testing:
-   Different use cases are tested to cover various scenarios, such as different income levels.
-   System testing ensures that the Tax Calculator produces accurate results for a range of real-world tax scenarios.
-
----
-4. Boundary and Stress Testing:
-   The application is subjected to boundary value testing to validate its behavior when input values are at the lower and upper limits.
+**Input Validation:**
+Test the Tax Calculator with valid inputs to ensure it accepts correct data without errors.
+Test with invalid inputs and verify that appropriate error messages are displayed.
 
 ---
-5. User Interface Validation:
-   System testing verifies that the user interface is user-friendly, intuitive, and consistent.
-   It ensures that the button and input field are visually appealing,the summary report component displays the results in a clear and understandable format and,
-   error message component visually appealing as an informative message.
+**Performance Testing:**
+Assess the performance of the Tax Calculator under different load conditions to ensure it responds efficiently to user inputs.
+Check for any performance bottlenecks and optimize the system as needed.
 
 ---
-7. Compatibility Testing:
-   The Tax Calculator is tested on various browsers and devices to ensure compatibility across different platforms,
-   ensuring that users can access and use the application seamlessly.
+**Compatibility Testing:**
+Test the Tax Calculator on different browsers, operating systems, and devices to ensure cross-platform compatibility.
+Verify that the user interface is responsive and usable on various screen sizes.
 
 ---
-8. Error Handling and Recovery:
-   System testing evaluates how the application responds unexpected inputs. It ensures that error messages are meaningful and provide guidance to users for resolving issues.
+**Usability Testing:**
+Assess the user interface and user experience to ensure the Tax Calculator is user-friendly and intuitive.
+Gather feedback from real users to identify areas for improvement.
 
 ---
-9. Performance Evaluation:
-   System testing assesses the overall performance of the Tax Calculator, including response times and resource utilization.
-   It ensures that the application performs efficiently even during peak usage.
+**Error Handling:**
+Validate that the Tax Calculator gracefully handles errors and exceptions, providing clear and meaningful error messages to users.
 
+___
+**Regression Testing:**
+Perform regression testing after making updates or modifications to the Tax Calculator to ensure new changes do not introduce new issues.
 ---
-10. Regression Testing:
-    Any changes or updates to the Tax Calculator are verified with regression testing to ensure that existing functionality remains unaffected.
----
-11. Accessibility Testing:
-    Focusing on ensuring that the Tax Calculator is usable by individuals with different abilities. Main concern were Keyboard navigation and color contrast.
+
 
 ### Acceptance testing
 
-In the sprint review, the team conducted a demonstration of the Tax Calculator, treating it as an acceptance testing phase.
-During this review, the primary focus was to showcase the Tax Calculator's functionality and demonstrate that it meets the acceptance criteria
-and business requirements defined for the sprint.
+The team demonstrated the Tax Calculator at the sprint review, using it as an acceptance testing step. 
+The main goal of this review was to highlight the Tax Calculator's functionality and show that it complies with the acceptance standards and business objectives established for the sprint.
 
-During the sprint review, the team presented the key features of the Tax Calculator, including the button for tax calculation, the input field to add income,
-and the summary report component displaying the calculated result.
-The team showcased various scenarios, such as different income levels to demonstrate the Tax Calculator's accuracy.
+The primary components of the Tax Calculator, including the button for tax computation, the input field for adding income, and the summary report component showing the computed result, were presented by the team during the sprint review. 
+To highlight the Tax Calculator's accuracy, the team presented a variety of situations, such as those with diverse income levels.
 
-Stakeholders actively participated in the review, providing valuable feedback on the Tax Calculator's functionality, user interface, and overall user experience.
-The  issues or concerns raised during the review were noted and prioritized for resolution in subsequent sprints or development cycles.
+Stakeholders actively engaged in the evaluation and offered insightful input on the functionality, user interface, and overall user experience of the Tax Calculator.
+The problems or issues brought up during the review were documented and given priority for fixing in upcoming sprints or development cycles.
+
+
+
 
 
 
@@ -140,19 +129,36 @@ The  issues or concerns raised during the review were noted and prioritized for 
 
 ### Black Box
 
-#### Functional
+**Functional Testing :**
 
-1.Boundary Value Analysis:
 
-Perform boundary value testing to check the application's behavior at the edge of input ranges.
-Test the Tax Calculator with inputs just below and above the lower and upper income boundaries to ensure it calculates taxes accurately.
+In the Tax Calculator, primarily focuses on verifying that the software functions as intended, according to its specifications or requirements.
 
-2.Equivalence Partitioning:
+---
 
-Apply equivalence partitioning to divide the input space into equivalent classes and test representative inputs from each class.
-Test the Tax Calculator with multiple income values within each partition to validate consistent tax calculations.
+**Boundary Value Analysis:**
+[Boundary Value](![Upper Boundary Value testing.png](..%2F..%2FTaxCalUIAutomation-main%2FAssets%2FUpper%20Boundary%20Value%20testing.png))
+
+Test the application's behavior at the input range's edges using boundary values. 
+To make sure the Tax Calculator calculates taxes correctly, test it with entries that are just below and over the lower and higher income thresholds.
+
+**Equivalence Partitioning:**
+
+Divide the input space into equivalent classes using equivalence partitioning, then test representative inputs from each class.
+To verify accurate tax estimates, use the Tax Calculator with a variety of income numbers inside each partition.
+
+
 
 #### Non-functional
+Performance Testing: Evaluating the speed and responsiveness of the tax calculator under different user loads to ensure quick and efficient tax calculations.
+
+Security Testing: Verifying that user data is handled securely, with proper encryption and access controls, safeguarding sensitive financial information.
+
+Usability Testing: Assessing the user interface for ease of use, clear navigation, and overall user-friendliness to ensure a positive experience for taxpayers.
+
+Compatibility Testing: Checking that the tax calculator functions correctly on various devices, browsers, and platforms to accommodate different user preferences.
+
+Reliability Testing: Ensuring the tax calculator consistently provides accurate results and remains stable even during prolonged periods of usage, preventing disruptions.
 
 ---
 ### White Box
@@ -227,8 +233,19 @@ Test analysis and design
 
 # DEFECT MANAGEMENT
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Defect management for the tax calculator involves a structured process to identify, track, prioritize, and rectify any issues or anomalies discovered during development, testing, and usage. 
+Here's how defect management would work for the tax calculator:
 
+
+Defect Tracking: Systematically identifying and documenting defects, including their descriptions, replication steps, and impact, using a tracking tool or system.
+
+Prioritization: Assessing defects based on their severity and potential impact on tax calculations, ensuring critical issues are addressed promptly.
+
+Assigning and Resolving: Assigning defects to the development team, who investigate, fix, and validate them, ensuring accurate tax calculations and compliance.
+
+Revalidation: Rigorous retesting of the tax calculator after defect resolution to confirm that fixes are successful and do not introduce new issues.
+
+Process Improvement: Analyzing trends in defects to identify recurring issues, enhancing development processes, testing strategies, and user feedback loops for continuous improvement.
 ![Defect Report](/Asserts/Defect%20reporting.png)
 
 # TEST EXIT REPORT
