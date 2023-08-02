@@ -108,6 +108,7 @@ ___
 
 **Regression Testing:**
 Perform regression testing after making updates or modifications to the Tax Calculator to ensure new changes do not introduce new issues.
+
 ---
 
 
@@ -165,17 +166,16 @@ Reliability Testing: Ensuring the tax calculator consistently provides accurate 
 
 ### White Box
 
-1. Statement Coverage Testing:
+**Code Coverage Analysis:** 
 
-Verify that each line of code in the Tax Calculator's implementation is executed at least once during testing.
-Ensure that all code statements are reachable and tested to detect any potential logic errors or dead code.
+Ensure that all sections of the tax calculator's code have been executed and tested. 
+This includes statement coverage, branch coverage, and path coverage to identify untested or dead code.
 
 
 
-2. Branch Coverage Testing:
+**Branch Testing:** 
 
-Test different branches and decision points in the code to ensure that all possible scenarios are evaluated.
-Check if conditional statements, loops, and logical operators are adequately tested to cover both true and false conditions.
+All decision points in the code are tested to ensure that both true and false branches are executed and verified for accuracy.
 
 
 # TEST MANAGEMENT
@@ -186,20 +186,28 @@ Check if conditional statements, loops, and logical operators are adequately tes
 
 ### Sprint 1
 
-- **Date -** May 22nd, 2023 - June 5th, 2023Date
+- **Date -** May 22nd, 2023 - June 5th, 2023 
 
-- **Sprint goal -** MVP: Calculate Income Tax
+- **Sprint goal -**  Calculate Income Tax
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+We were able to focus on UI testing throughout this sprint. We may generally be divided into 4 categories. field for entering income, calculate button, summary report, and message at the end.
+
 
 ![Test plan Sprint 1](/Asserts/Slide2.JPG)
+
+![input field.png](Asserts%2Finput%20field.png)
+![Calculate Button.png](Asserts%2FCalculate%20Button.png)
+![Summary Report.png](Asserts%2FSummary%20Report.png)
+![message.png](Asserts%2Fmessage.png)
+
+
 ### Sprint 2
 
 - **Date -** June 5th, 2023 - June 19th, 2023
 
 - **Sprint goal -** do all the component testing, do all the API testing, manage time properly this time.
+we were able to focus on this sprint validate functionality and behaviour of the API, Security measures, Identify the defect vulnerabilities.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
 ![Test plan Sprint 1](/Asserts/Slide3.JPG)
 
@@ -208,7 +216,6 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 - **Date -** June 19th, 2023 - July 3rd, 2023
 - **Sprint goal** - Automate the UI testing using Selenium Finish testing on Tax Calculator
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
 ![Test plan Sprint 1](/Asserts/Slide4.JPG)
 
@@ -252,4 +259,3 @@ Process Improvement: Analyzing trends in defects to identify recurring issues, e
 
 # TEST EXIT REPORT
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
