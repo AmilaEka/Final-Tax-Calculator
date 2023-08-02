@@ -69,10 +69,12 @@ When conducting system testing for the Tax Calculator that you built, several fa
 Here are some key considerations for system testing of the Tax Calculator:
 
 ---
+
 **Functional Testing**
 Verify that the Tax Calculator correctly calculates taxes based on the provided inputs, including income, deductions, credits, and tax rules.
 Test different scenarios and edge cases to ensure accurate results in various situations.
 Check if the Tax Calculator handles different tax types (e.g., income tax, sales tax) appropriately.
+
 ---
 **Integration Testing:**
 Test the integration of different modules or components within the Tax Calculator to ensure seamless communication and data flow.
@@ -103,6 +105,7 @@ Gather feedback from real users to identify areas for improvement.
 Validate that the Tax Calculator gracefully handles errors and exceptions, providing clear and meaningful error messages to users.
 
 ___
+
 **Regression Testing:**
 Perform regression testing after making updates or modifications to the Tax Calculator to ensure new changes do not introduce new issues.
 ---
@@ -134,10 +137,9 @@ The problems or issues brought up during the review were documented and given pr
 
 In the Tax Calculator, primarily focuses on verifying that the software functions as intended, according to its specifications or requirements.
 
----
 
 **Boundary Value Analysis:**
-[Boundary Value](![Upper Boundary Value testing.png](..%2F..%2FTaxCalUIAutomation-main%2FAssets%2FUpper%20Boundary%20Value%20testing.png))
+![Upper Boundary Value testing.png](Asserts%2FUpper%20Boundary%20Value%20testing.png)
 
 Test the application's behavior at the input range's edges using boundary values. 
 To make sure the Tax Calculator calculates taxes correctly, test it with entries that are just below and over the lower and higher income thresholds.
@@ -160,7 +162,7 @@ Compatibility Testing: Checking that the tax calculator functions correctly on v
 
 Reliability Testing: Ensuring the tax calculator consistently provides accurate results and remains stable even during prolonged periods of usage, preventing disruptions.
 
----
+
 ### White Box
 
 1. Statement Coverage Testing:
